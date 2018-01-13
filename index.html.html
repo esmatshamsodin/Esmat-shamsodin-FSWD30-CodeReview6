@@ -299,6 +299,61 @@ label.star:before {
   content: '\f006';
   font-family: FontAwesome;
 }
+.raiting
+{
+  position: absolute;
+  display: block;
+  width: 200px;
+}
+
+.raiting:hover {
+  bagro
+}
+
+.raiting:after {
+  content: '';
+  clear: right;
+  display: block;
+  width: 100%;
+}
+
+.raiting input {
+  display: none;
+}
+
+.raiting [for="r_0"] {
+  width: auto;
+  background: none;
+  line-height: 32px;
+}
+
+.raiting label {
+  display: inline-block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: url('https://cdn4.iconfinder.com/data/icons/cartoon-game-ui/100/Star-256.png') center no-repeat;
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+  float: right;
+}
+
+input:checked ~ label {
+  background-image: url('http://starkid.ee/wp-content/uploads/2015/10/favorite.png');
+}  
+
+div:hover label {
+  background-image: url('https://cdn4.iconfinder.com/data/icons/cartoon-game-ui/100/Star-256.png');
+}
+
+label:hover {
+  background-image: url('http://starkid.ee/wp-content/uploads/2015/10/favorite.png')
+}
+
+input:hover ~ label {
+  background-image: url('http://starkid.ee/wp-content/uploads/2015/10/favorite.png')
+
 
 </style>
 <body id="page-top" class="index">
@@ -446,8 +501,22 @@ label.star:before {
             </form>
                    
                   </div>
-                    
-                    
+              </div>
+              <div class="container">
+              	<div>Raiting</div>
+               <div class="raiting1">
+  <input type="radio" name="rating" value="5" id="r_5">
+  <label for="r_5"></label>
+  <input type="radio" name="rating" value="4" id="r_4">
+  <label for="r_4"></label>
+  <input type="radio" name="rating" value="3" id="r_3">
+  <label for="r_3"></label>
+  <input type="radio" name="rating" value="2" id="r_2">
+  <label for="r_2"></label>
+  <input type="radio" name="rating" value="1" id="r_1" required>
+  <label for="r_1"></label>
+</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -554,8 +623,23 @@ label.star:before {
                 </div>
             </form>
                    
-
+</div>
             </div>
+             <div class="container">
+               <div class="raiting2">
+               	<div>Raiting</div>
+  <input type="radio" name="rating" value="5" id="r_5">
+  <label for="r_5"></label>
+  <input type="radio" name="rating" value="4" id="r_4">
+  <label for="r_4"></label>
+  <input type="radio" name="rating" value="3" id="r_3">
+  <label for="r_3"></label>
+  <input type="radio" name="rating" value="2" id="r_2">
+  <label for="r_2"></label>
+  <input type="radio" name="rating" value="1" id="r_1" required>
+  <label for="r_1"></label>
+</div>
+                    </div>
         </div>
     </section>
     <hr>
@@ -663,6 +747,21 @@ label.star:before {
             </form>
                    
                 </div>
+                 <div class="container">
+                 	<div>Raiting</div>
+               <div class="raiting3">
+  <input type="radio" name="rating" value="5" id="r_5">
+  <label for="r_5"></label>
+  <input type="radio" name="rating" value="4" id="r_4">
+  <label for="r_4"></label>
+  <input type="radio" name="rating" value="3" id="r_3">
+  <label for="r_3"></label>
+  <input type="radio" name="rating" value="2" id="r_2">
+  <label for="r_2"></label>
+  <input type="radio" name="rating" value="1" id="r_1" required>
+  <label for="r_1"></label>
+</div>
+                    </div>
             </div>
         </div>
     </section>
@@ -784,8 +883,24 @@ label.star:before {
     </div>  
                 </div>
             </div>
-        </div>
         
+         <div class="container">
+         	<div>Raiting</div>
+               <div class="raiting4">
+  <input type="radio" name="rating" value="5" id="r_5">
+  <label for="r_5"></label>
+  <input type="radio" name="rating" value="4" id="r_4">
+  <label for="r_4"></label>
+  <input type="radio" name="rating" value="3" id="r_3">
+  <label for="r_3"></label>
+  <input type="radio" name="rating" value="2" id="r_2">
+  <label for="r_2"></label>
+  <input type="radio" name="rating" value="1" id="r_1" required>
+  <label for="r_1"></label>
+</div>
+                    </div>
+                    </div>
+
     </section>
 
 
