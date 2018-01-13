@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>My Mediatek</title>
+
+    
+</head>
+
+<style>
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.text-primary {
+    color: #fed136;
+}
+
+p {
+    
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #fed136;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #fec503;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: #fed136;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+}
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #fed136;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #fec503;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #fed136;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #fed136;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #fec503;
+}
+#first1{
+    border:5px solid black;
+   border-radius:5%;
+   background-color: lightgray;
+}
+#sec1{
+    border:5px solid black;
+   border-radius:5%;
+   background-color: lightgray;
+}
+#third1{
+    border:5px solid black;
+   border-radius:5%;
+   background-color: lightgray;
+}
+#forth1{
+    border:5px solid black;
+   border-radius:5%;
+   background-color: lightgray;
+}
+header {
+    text-align: center;
+    color: cyan;
+    background-attachment: scroll;
+    background-image: url(img/bc.png);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+
+section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+.music-content {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.music-content img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+}
+
+.music-content h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.music-content p {
+    margin-top: 0;
+}
+div.stars {
+  width: 270px;
+  display: inline-block;
+}
+
+input.star { display: none; }
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before { color: #F62; }
+
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+</style>
+<body id="page-top" class="index">
+ <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Hi every body...</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#comics">Comics</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#movies">Movies</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#musics">Musics</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#books">Books</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+     <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To My World!</div>
+                <div class="intro-heading">I hope you enjoy ^_^</div>
+                <a href="#" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+     <!-- comics Section -->
+    <section id="comics">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">My Comics</h2>
+                    <h3 class="section-subheading text-muted">If you like my comics make them popular</h3>
+                    <h3 class="section-subheading text-muted">You can new comics too the result of your saving would be shown at the end of the page</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <span class="fa-stack fa-4x">
+                        <img src="img/comics1.jpg" width="350" height="350" style="border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    ;">
+                        
+                    </span>
+                    <!--geting result from js-->
+                    <p id="first1"></p> 
+                    
+                </div>
+                <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <span class="fa-stack fa-4x">
+                        <img src="img/Thor.jpg" width="350" height="350" style="border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    ;">
+                    </span>
+                    <!--geting result from js-->
+                    <p id="sec1"></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <span class="fa-stack fa-4x">
+                        <img src="img/nim.jpg" width="350" height="350" style="border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    ;">
+                    </span>
+                    <!--geting result from js-->
+                    <p id="third1"></p>
+                    
+                </div>
+                <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <span class="fa-stack fa-4x">
+                        <img src="img/Runaways.jpg" width="350" height="350" style="border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    ;">
+                    </span>
+                    <p id="forth1"></p>
+                    
+                </div>
+            </div>
+            <!--giving new item from user can see the result in end of page-->
+                <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <form method="post" class="form-horizontal">
+               <div class="form-group">
+                    <label for="author" class="col-sm-2 control-label">Name of comics</label>
+                    <div class="col-sm-10">
+                      <input id="author" name="author" type="text" placeholder="name">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="title" class="col-sm-2 control-label">Title:</label>
+                    <div class="col-sm-10">
+                      <input id="title" name="title" value="" type="text" placeholder="Title">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="year" class="col-sm-2 control-label">publisher:</label>
+                    <div class="col-sm-10">
+                        <input id="year" name="year" value="" type="text" placeholder="publisher" pattern="[0-9]{4}">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="pageNumber" class="col-sm-2 control-label">gener</label>
+                    <div class="col-sm-10">
+                        <input id="pageNumber" name="pageNumber" value="" placeholder="gener">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input class="btn btn-default" onclick="return addBook();" type="submit" value="Add new comics">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button class="btn btn-default" onclick="return resetForm();">Cancel</button>
+                    </div>
+                </div>
+            </form>
+                   
+                  </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- movies Grid Section -->
+    <section id="movies" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">My Movies</h2>
+                    <h3 class="section-subheading text-muted">If you like my movies you can meke them popular</h3>
+                    <h3 class="section-subheading text-muted">You can add items too</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <a href="#movies" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/citylights_image.jpg" class="img-responsive" alt="" width="200" height="200">
+                    </a>
+                    <div class="portfolio-caption">
+                        <p id="mo1"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/film1.jpg" class="img-responsive" alt="" width="200" height="200">
+                    </a>
+                    <div class="portfolio-caption">
+                        <p id="mo4"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/film2.jpg" class="img-responsive" alt="" width="200" height="200">
+                    </a>
+                    <div class="portfolio-caption">
+                        <p id="mo2"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/film3.jpg" class="img-responsive" alt="" width="200" height="200">
+                    </a>
+                    <div class="portfolio-caption">
+                        <p id="mo3"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-ms-4" >
+                <form method="post" class="form-horizontal">
+               <div class="form-group">
+                    <label for="author" class="col-sm-2 control-label">Name of movie</label>
+                    <div class="col-sm-10">
+                      <input id="author" name="author" type="text" placeholder="name">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="title" class="col-sm-2 control-label">Title:</label>
+                    <div class="col-sm-10">
+                      <input id="title" name="title" value="" type="text" placeholder="Title">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="year" class="col-sm-2 control-label">publisher:</label>
+                    <div class="col-sm-10">
+                        <input id="year" name="year" value="" type="text" placeholder="publisher" pattern="[0-9]{4}">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="pageNumber" class="col-sm-2 control-label">gener</label>
+                    <div class="col-sm-10">
+                        <input id="pageNumber" name="pageNumber" value="" placeholder="gener">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input class="btn btn-default" onclick="return addBook();" type="submit" value="Add new movie">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button class="btn btn-default" onclick="return resetForm();">Cancel</button>
+                    </div>
+                </div>
+            </form>
+                   
+
+            </div>
+        </div>
+    </section>
+    <hr>
+    <br>
+<!--music selection-->
+<section id="musics" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">My Musics</h2>
+                    <h3 class="section-subheading text-muted">If you like my musics you can make them popular</h3>
+                    <h3 class="section-subheading text-muted">You can add items too</h3>
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <div class="music-content">
+                        <img class="img-circle img-responsive" src="img/musik.jpg" alt="">
+                        <div class="row row1"> 
+            <div class="col col-md-12 col-sm-12 colhead colhead1"><p id="m1"></p>
+            </div>
+        </div>
+        
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <div class="music-content">
+                        <img class="img-circle img-responsive" src="img/musik1.jpg" alt="">
+                        <p id="m2"></p>
+           
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <div class="music-content">
+                        <img class="img-circle img-responsive" src="img/musik3.jpg" alt="">
+                      <p id="m3"></p>
+           
+       
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                          <div class="row"></div>
+        <section class="col-xs-12 col-md-4">
+           <form method="post" class="form-horizontal">
+               <div class="form-group">
+                    <label for="author" class="col-sm-2 control-label">Name of song</label>
+                    <div class="col-sm-10">
+                      <input id="author" name="author" type="text" placeholder="name">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="title" class="col-sm-2 control-label">Title:</label>
+                    <div class="col-sm-10">
+                      <input id="title" name="title" value="" type="text" placeholder="Title">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="year" class="col-sm-2 control-label">publisher:</label>
+                    <div class="col-sm-10">
+                        <input id="year" name="year" value="" type="text" placeholder="publisher" pattern="[0-9]{4}">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="pageNumber" class="col-sm-2 control-label">gener</label>
+                    <div class="col-sm-10">
+                        <input id="pageNumber" name="pageNumber" value="" placeholder="gener">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input class="btn btn-default" onclick="return addBook();" type="submit" value="Add new songs">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button class="btn btn-default" onclick="return resetForm();">Cancel</button>
+                    </div>
+                </div>
+            </form>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--book selection-->
+<section id="books" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">My Books</h2>
+                    <h3 class="section-subheading text-muted">If you like my books you can make them popular</h3>
+                    <h3 class="section-subheading text-muted">You can add items too</h3>
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <div class="music-content">
+                        <img class="img-circle img-responsive" src="img/woodwalkers.jpg" alt="">
+                       <p id="b4"></p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <div class="music-content">
+                         <img class="img-circle img-responsive" src="img/fondation-asimov.jpg" alt="">
+                        <p id="b1"></p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <div class="music-content">
+                        <img class="img-circle img-responsive" src="img/modesty1.jpg" alt="">
+                        <p id="b2"></p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-ms-4" >
+                    <div class="music-content">
+                        <img class="img-circle img-responsive" src="img/Sandman.jpg" alt="">
+                        <p id="b3"></p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="row"></div>
+        <section class="col-xs-12 col-md-4">
+           <form method="post" class="form-horizontal">
+               <div class="form-group">
+                    <label for="author" class="col-sm-2 control-label">Author:</label>
+                    <div class="col-sm-10">
+                      <input id="author" name="author" type="text" placeholder="Author">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="title" class="col-sm-2 control-label">Title:</label>
+                    <div class="col-sm-10">
+                      <input id="title" name="title" value="" type="text" placeholder="Title">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="year" class="col-sm-2 control-label">publisher:</label>
+                    <div class="col-sm-10">
+                        <input id="year" name="year" value="" type="text" placeholder="publisher" pattern="[0-9]{4}">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <label for="pageNumber" class="col-sm-2 control-label">gener</label>
+                    <div class="col-sm-10">
+                        <input id="pageNumber" name="pageNumber" value="" placeholder="gener">
+                    </div>  
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input class="btn btn-default" onclick="return addBook();" type="submit" value="Add new book">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button class="btn btn-default" onclick="return resetForm();">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </section>  
+        <section class="col-xs-12 col-md-8">
+            <ul class="book-storage">
+            </ul>
+        </section>
+    </div>  
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+<script src="myscript.js">
+
+</script>
+
+    
+</body>
+</html>
